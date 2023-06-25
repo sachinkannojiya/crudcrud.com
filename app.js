@@ -22,6 +22,14 @@ function saveData() {
     axios.get('https://crudcrud.com/api/4eac9ffbdeb74c60beba59e835f1b727/appoinmentData')
     .then((data)=> console.log(data))
     .catch((e)=> console.log(e));
+
+    axios.delete('https://crudcrud.com/api/4eac9ffbdeb74c60beba59e835f1b727/appoinmentData')
+    .then((data)=> console.log(data))
+    .catch((e)=> console.log(e));
+
+    axios.put('https://crudcrud.com/api/4eac9ffbdeb74c60beba59e835f1b727/appoinmentData/id',appointment)
+    .then((data)=> console.log(data))
+    .catch((e)=> console.log(e));
     
   
     alert('Appointment booked successfully!');
